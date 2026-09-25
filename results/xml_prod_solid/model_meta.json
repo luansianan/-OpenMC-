@@ -1,0 +1,12 @@
+{
+  "enrichment_pct": 14.83,
+  "pitch_cm": 0.5743240000000001,
+  "pellet": "solid",
+  "rod_outer_diameter_cm": 0.33499999999999996,
+  "n_pins": 91,
+  "duct_f2f_cm": 5.6134,
+  "duct_f2f_inner_cm": 5.410200000000001,
+  "particles": 20000,
+  "batches": 30,
+  "inactive": 5
+}

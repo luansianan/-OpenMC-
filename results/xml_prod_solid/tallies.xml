@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tallies>
+  <!--xy mesh-->
+  <mesh id="1" name="xy mesh">
+    <dimension>120 120 1</dimension>
+    <lower_left>-2.8567 -2.8567 -0.001</lower_left>
+    <upper_right>2.8567 2.8567 0.001</upper_right>
+  </mesh>
+  <!--xy mesh fuel-->
+  <mesh id="2" name="xy mesh fuel">
+    <dimension>60 60 1</dimension>
+    <lower_left>-2.8567 -2.8567 -0.001</lower_left>
+    <upper_right>2.8567 2.8567 0.001</upper_right>
+  </mesh>
+  <filter id="1" type="mesh">
+    <bins>1</bins>
+  </filter>
+  <filter id="2" type="mesh">
+    <bins>2</bins>
+  </filter>
+  <filter id="3" type="cell">
+    <bins>1</bins>
+  </filter>
+  <filter id="5" type="energy">
+    <bins>1e-05 2.030138885898629e-05 4.121463896037726e-05 8.367144122173452e-05 0.00016986464646342474 0.0003448488241248216 0.0007000910076122174 0.0014212819782215157 0.002885399811814427 0.005857762359329055 0.011892071150027212 0.02414255607554347 0.04901274189394899 0.09950267322341866 0.2020042461617265 0.41009667524955984 0.8325532074018732 1.690198640926169 3.4313379858372293 6.9660926757092385 14.142135623730951 28.710499459388465 58.28630138607608 118.32928695908022 240.22488679628626 487.68988404573685 990.0781978606437 2009.9962495573295 4080.5715467367395 8284.12697372177 16817.928305074292 34142.730232386544 69314.48431551465 140718.0299649369 285677.14457886684 579964.2800220423 1177408.0373049495 2390301.841102361 4852644.716656989 9851542.738735888 20000000.000000004</bins>
+  </filter>
+  <filter id="6" type="cell">
+    <bins>2</bins>
+  </filter>
+  <filter id="8" type="cell">
+    <bins>3</bins>
+  </filter>
+  <filter id="10" type="cell">
+    <bins>4</bins>
+  </filter>
+  <filter id="12" type="cell">
+    <bins>5</bins>
+  </filter>
+  <filter id="14" type="cell">
+    <bins>7</bins>
+  </filter>
+  <filter id="16" type="cell">
+    <bins>1 2 3 4 5 7</bins>
+  </filter>
+  <tally id="1" name="mesh flux">
+    <filters>1</filters>
+    <scores>flux</scores>
+  </tally>
+  <tally id="2" name="mesh flux fuel">
+    <filters>2 3</filters>
+    <scores>flux</scores>
+  </tally>
+  <tally id="3" name="spectrum_fuel">
+    <filters>3 5</filters>
+    <scores>flux</scores>
+  </tally>
+  <tally id="4" name="spectrum_gap">
+    <filters>6 5</filters>
+    <scores>flux</scores>
+  </tally>
+  <tally id="5" name="spectrum_clad">
+    <filters>8 5</filters>
+    <scores>flux</scores>
+  </tally>
+  <tally id="6" name="spectrum_coolant">
+    <filters>10 5</filters>
+    <scores>flux</scores>
+  </tally>
+  <tally id="7" name="spectrum_coolant_outer">
+    <filters>12 5</filters>
+    <scores>flux</scores>
+  </tally>
+  <tally id="8" name="spectrum_duct">
+    <filters>14 5</filters>
+    <scores>flux</scores>
+  </tally>
+  <tally id="9" name="region total flux">
+    <filters>16</filters>
+    <scores>flux</scores>
+  </tally>
+</tallies>

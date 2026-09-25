@@ -1,0 +1,11 @@
+# Python packages needed for the model / post-processing / report
+# (install inside the conda environment created by environment/setup_wsl.sh)
+
+openmc>=0.15          # conda-forge, linux-64 / osx-64 only (no Windows build)
+numpy
+matplotlib
+pandas
+h5py
+uncertainties
+reportlab             # one-page PDF report (CJK font support)
+pypdf                 # optional: check the PDF page count

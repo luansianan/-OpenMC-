@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <material id="1" name="UO2" depletable="true">
+    <density value="10.94" units="g/cm3"/>
+    <nuclide name="U235" ao="0.04943333333333333"/>
+    <nuclide name="U238" ao="0.2839"/>
+    <nuclide name="O16" ao="0.6666666666666666"/>
+  </material>
+  <material id="2" name="HT9">
+    <density value="7.8" units="g/cm3"/>
+    <nuclide name="Fe54" ao="0.040915"/>
+    <nuclide name="Fe56" ao="0.642278"/>
+    <nuclide name="Fe57" ao="0.014832999999999999"/>
+    <nuclide name="Fe58" ao="0.001974"/>
+    <nuclide name="Cr50" ao="0.00499675"/>
+    <nuclide name="Cr52" ao="0.09635735000000001"/>
+    <nuclide name="Cr53" ao="0.01092615"/>
+    <nuclide name="Cr54" ao="0.0027197500000000004"/>
+    <nuclide name="Mo92" ao="0.0014649"/>
+    <nuclide name="Mo94" ao="0.0009186999999999999"/>
+    <nuclide name="Mo95" ao="0.0015837000000000002"/>
+    <nuclide name="Mo96" ao="0.0016673"/>
+    <nuclide name="Mo97" ao="0.0009582000000000001"/>
+    <nuclide name="Mo98" ao="0.0024129999999999998"/>
+    <nuclide name="Mo100" ao="0.0009942"/>
+  </material>
+  <material id="3" name="LBE">
+    <density value="10.29" units="g/cm3"/>
+    <nuclide name="Pb204" ao="0.006202"/>
+    <nuclide name="Pb206" ao="0.106763"/>
+    <nuclide name="Pb207" ao="0.097903"/>
+    <nuclide name="Pb208" ao="0.232132"/>
+    <nuclide name="Bi209" ao="0.557"/>
+  </material>
+  <material id="4" name="Helium">
+    <density value="0.000178" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+</materials>

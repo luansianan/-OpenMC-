@@ -1,0 +1,12 @@
+{
+  "case": "godiva",
+  "description": "Bare HEU metal sphere benchmark (Godiva): r = 8.741 cm, rho = 18.74 g/cm3, U234/U235/U238 = 1.02/93.71/5.27 wt% (U-234 replaced by U-238 in this library). Experimental k_eff = 1.0000. Used to validate the ENDF/B-VIII.0 + NJOY + OpenMC chain.",
+  "k_eff": 1.00071,
+  "k_eff_std": 0.00073,
+  "reference_k_eff": 1.0,
+  "deviation_pcm": 71.0,
+  "particles": 10000,
+  "batches": 120,
+  "inactive": 20,
+  "threads": 12
+}

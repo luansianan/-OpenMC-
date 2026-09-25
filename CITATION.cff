@@ -1,0 +1,70 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "OpenMC reproduction of an LBE fuel-assembly benchmark (Energies 18 (2025) 3564) and analysis of the k_eff discrepancy"
+abstract: >-
+  OpenMC 0.16 model of a lead-bismuth eutectic cooled fast reactor fuel assembly
+  (91 pins, 5 rings, P/D = 1.7144, annular UO2 pellet, HT-9 structure) with a
+  self-built continuous-energy ENDF/B-VIII.0 library (IAEA NDS + NJOY2016).
+  The model reproduces the calculation workflow of the reference paper and shows,
+  through a packing upper bound and an enrichment study, that the published
+  k_eff reference (1.31181 at 14.83 % 235U) is inconsistent with the material and
+  geometry data of the same paper (it corresponds to about 24 % enrichment).
+  The cross-section chain is independently validated with the Godiva benchmark
+  (k = 1.00071 +/- 0.00073).
+type: software
+license: MIT
+keywords:
+  - OpenMC
+  - Monte Carlo
+  - lead-cooled fast reactor
+  - LBE
+  - criticality benchmark
+  - ENDF/B-VIII.0
+  - NJOY
+version: 1.0.0
+date-released: "2026-09-25"
+references:
+  - type: article
+    title: >-
+      Research on Equivalent One-Dimensional Cylindrical Modeling Method for
+      Lead-Bismuth Fast Reactor Fuel Assemblies
+    journal: Energies
+    volume: 18
+    start: 3564
+    year: 2025
+    doi: 10.3390/en18133564
+    authors:
+      - family-names: Xiao
+        given-names: Jinjie
+      - family-names: Zhang
+        given-names: Yongfa
+      - family-names: Li
+        given-names: Song
+      - family-names: Chen
+        given-names: Ling
+      - family-names: Li
+        given-names: Jiannan
+      - family-names: Zhang
+        given-names: Cong
+  - type: article
+    title: >-
+      OpenMC: A State-of-the-Art Monte Carlo Code for Research and Development
+    journal: Annals of Nuclear Energy
+    volume: 82
+    start: 90
+    end: 97
+    year: 2015
+    doi: 10.1016/j.anucene.2014.07.048
+    authors:
+      - family-names: Romano
+        given-names: Paul K.
+      - family-names: Horelik
+        given-names: Nicholas E.
+      - family-names: Herman
+        given-names: Bryan R.
+      - family-names: Nelson
+        given-names: Adam G.
+      - family-names: Forget
+        given-names: Benoit
+      - family-names: Smith
+        given-names: Kord

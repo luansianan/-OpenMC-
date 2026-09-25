@@ -1,0 +1,14 @@
+{
+  "case": "bound_pincell",
+  "description": "Upper bound on k for the paper's pin design: pin = 2.210 mm UO2 pellet + 0.254 mm He gap + 0.316 mm HT-9 clad (rod OD 3.350 mm), rods packed as tightly as geometrically possible (pitch = rod diameter, touching rods, reflective boundary). No hexagonal pin bundle built from these pins can reach a higher fuel volume fraction, so this k is an upper bound for any assembly made of these pins at the same enrichment.",
+  "enrichment_pct": 14.83,
+  "fuel_volume_fraction": 0.3947,
+  "k_eff": 1.07243,
+  "k_eff_std": 0.00087,
+  "paper_k_eff": 1.31181,
+  "deviation_pcm": -23938.0,
+  "particles": 5000,
+  "batches": 120,
+  "inactive": 20,
+  "threads": 12
+}

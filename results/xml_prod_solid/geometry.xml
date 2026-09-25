@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<geometry>
+  <cell id="1" name="UO2 fuel" material="1" region="-1" universe="1"/>
+  <cell id="2" name="helium gap" material="4" region="1 -2" universe="1"/>
+  <cell id="3" name="HT9 cladding" material="2" region="2 -3" universe="1"/>
+  <cell id="4" name="LBE coolant" material="3" region="3" universe="1"/>
+  <cell id="5" name="LBE coolant (lattice outer)" material="3" universe="2"/>
+  <cell id="6" name="assembly interior" fill="3" region="-4 -5 -6 -7 -8 -9" universe="4"/>
+  <cell id="7" name="HT9 duct" material="2" region="-10 -11 -12 -13 -14 -15 (4 | 5 | 6 | 7 | 8 | 9)" universe="4"/>
+  <hex_lattice id="3" name="fuel assembly" n_rings="6">
+    <pitch>0.5743240000000001</pitch>
+    <outer>2</outer>
+    <center>0.0 0.0</center>
+    <universes>
+     1
+    1 1
+   1 1 1
+  1 1 1 1
+ 1 1 1 1 1
+1 1 1 1 1 1
+ 1 1 1 1 1
+1 1 1 1 1 1
+ 1 1 1 1 1
+1 1 1 1 1 1
+ 1 1 1 1 1
+1 1 1 1 1 1
+ 1 1 1 1 1
+1 1 1 1 1 1
+ 1 1 1 1 1
+1 1 1 1 1 1
+ 1 1 1 1 1
+  1 1 1 1
+   1 1 1
+    1 1
+     1</universes>
+  </hex_lattice>
+  <surface id="1" type="z-cylinder" coeffs="0.0 0.0 0.1105"/>
+  <surface id="2" type="z-cylinder" coeffs="0.0 0.0 0.1359"/>
+  <surface id="3" type="z-cylinder" coeffs="0.0 0.0 0.16749999999999998"/>
+  <surface id="4" name="box_in_p0" type="plane" coeffs="1.0 0.0 0.0 2.7051000000000003"/>
+  <surface id="5" name="box_in_n0" type="plane" coeffs="-1.0 -0.0 0.0 2.7051000000000003"/>
+  <surface id="6" name="box_in_p1" type="plane" coeffs="0.5 0.8660254037844386 0.0 2.7051000000000003"/>
+  <surface id="7" name="box_in_n1" type="plane" coeffs="-0.5 -0.8660254037844386 0.0 2.7051000000000003"/>
+  <surface id="8" name="box_in_p2" type="plane" coeffs="-0.5 0.8660254037844386 0.0 2.7051000000000003"/>
+  <surface id="9" name="box_in_n2" type="plane" coeffs="0.5 -0.8660254037844386 0.0 2.7051000000000003"/>
+  <surface id="10" name="box_out_p0" type="plane" boundary="reflective" coeffs="1.0 0.0 0.0 2.8067"/>
+  <surface id="11" name="box_out_n0" type="plane" boundary="reflective" coeffs="-1.0 -0.0 0.0 2.8067"/>
+  <surface id="12" name="box_out_p1" type="plane" boundary="reflective" coeffs="0.5 0.8660254037844386 0.0 2.8067"/>
+  <surface id="13" name="box_out_n1" type="plane" boundary="reflective" coeffs="-0.5 -0.8660254037844386 0.0 2.8067"/>
+  <surface id="14" name="box_out_p2" type="plane" boundary="reflective" coeffs="-0.5 0.8660254037844386 0.0 2.8067"/>
+  <surface id="15" name="box_out_n2" type="plane" boundary="reflective" coeffs="0.5 -0.8660254037844386 0.0 2.8067"/>
+</geometry>
