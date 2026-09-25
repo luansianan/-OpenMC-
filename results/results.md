@@ -2,7 +2,7 @@
 
 **文献基准**: J. Xiao, Y. Zhang, S. Li, L. Chen, J. Li, C. Zhang, *Research on Equivalent One-Dimensional Cylindrical Modeling Method for Lead–Bismuth Fast Reactor Fuel Assemblies*, Energies **18** (2025) 3564, doi:10.3390/en18133564 —— 取其表 3/表 4 “Before Equivalence”（全燃料棒布置、2-D 非均匀组件、OpenMC 参考值 k_eff = 1.31181 ± 0.00023）。
 
-## 1. 工具链验证（先证明自己没错）
+## 1. 工具链验证（
 
 | 基准 | 本工作 (OpenMC 0.16 + 自制 ENDF/B-VIII.0 库) | 参考值 | 偏差 |
 |---|---|---|---|
